@@ -1,0 +1,41 @@
+
+This program is used to calculate wannier functions in a 1-dimensional potential using a special technique motivated by .."Kivelson"
+
+INSTALLATION 
+
+(These instructions assume you are using a linux-like operating system with debian-like packages. If you are not using a debian-like operating system like ubuntu you might want to consider installing it on a virtual machine instead of trying to figure this installation out on a different operating system)
+
+Three library dependencies are not included with the code: You have to install the development packages for 'armadillo', 'gsl' and 'boost'
+
+To build the project 'g++' and 'make' are used. So you might want to just install the package 'build-essential'
+
+To create the graphs as pdf's from the human-readable data files, the script createPlots.sh uses the packages 'gnuplot', 'ghostscript' and 'patch'
+
+Try running
+
+sudo apt-get install build-essential libarmadillo-dev libgsl0-dev libboost1.53-all-dev gnuplot ghostscript patch
+
+to install all these requirements. If things fail (like for boost) try finding the equivalent package.
+
+
+
+BUILDING AND RUNNING
+
+To use the program do the following:
+
+make                 # builds
+./inWan --help       # displays program command-line parameters (maybe easier to set them in the code)
+./inWan              # executes the program
+./createPlots.sh     # takes the data files in the 'output'-directory and generates pdf's
+./graph.sh           # displays the pdf's (assumes you use okular as pdf viewer, if not just open the pdf's individually with your own pdf viewer)
+
+make sure you delete/move the folder 'output' before you execute inWan again
+
+
+
+DOCUMENTATION
+
+You can find some documentation about the project in the 'doc' folder. The theory and the details about what the program does are described in my master thesis (thesis.pdf). For the code there is a pdf listing the functions (code.pdf). While this document might look nice don't expect too much from it. It was generated automatically (using doxygen) from the code and its comments.
+
+Some shiny graphs are available in the folder 'screenshots' but they will likely not lead to a good understanding, as opposed to the thesis. A sample of the program output is shown in 'programOutputSample'.
+

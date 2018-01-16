@@ -1,0 +1,21 @@
+arguments.sites: 6           arguments.latticeDepth: 10          arguments.inhStrength: 0.01        arguments.inhShift: 0.3         arguments.periodRatio: 0.618034    arguments.evIntervalEnd: 2           arguments.outPath: output      
+pp.ld: 10          pp.inhS: 0.01        pp.inhLatRatio: 0.009       
+calculateH0eigenvalues() executing ... 0.048706s
+calculateH0eigenfunctions() executing ... 0.03638s
+calculateSchroedinger0Error() executing ... 0.005094s
+0.00280588 
+calculateCenteredWannier0Functions() executing ... 0.004283s
+calculateWannier0Functions() executing ... 0.008619s
+calculateHinW0() executing ... 0.014936s count: 21          
+calculateHeigenvaluesESorted() executing ... 0.000489s
+calculateHeigenvaluesOverTrapStrength() executing ... 0.012934s
+calculateBand0ProjectorsExpectationInHeigenstates() executing ... 0.000177s
+calculateXinW0() executing ... 0.024905s 
+state 5 is not well localized at -2.5
+state 3 is not well localized at -1.5
+state 1 is not well localized at -0.5
+state 2 is not well localized at 1.5
+state 4 is not well localized at 2.5
+calculateFOverTrapStrength() executing ... 0.001164s 
+calculateHeigenstates() executing ... 0.019055s
+program finished
